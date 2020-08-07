@@ -14,16 +14,8 @@ app.use(express.json());
 // Route Params: Identifica qual recurso deverá ser atualizado ou deletado.
 // Query Params: Paginação, filtros, ordenação, etc.
 
-app.get('/users', (request, response) => {
-  console.log(request.query);
-
-  const users = [
-    { name: 'Diego', age: 25 },
-    { name: 'Vini', age: 21 },
-    { name: 'Berranteiro', age: 300 },
-  ];
-  
-  return response.json(users);
+app.get('/', (request, response) => {
+  return response.json({ message: 'Hello World!' });
 });
 
 // localhost:3333
