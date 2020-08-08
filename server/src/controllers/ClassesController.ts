@@ -97,6 +97,8 @@ export default class ClassesController {
       // 201: status criado com sucesso.
       return response.status(201).send();
     } catch (err) {
+      console.log(err);
+      
       // Desfaz qualquer mudança que tenha sido feita no bd antes de dar o erro aqui capturado.
       await trx.rollback();
       return response.status(400).json({
