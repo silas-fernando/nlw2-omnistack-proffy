@@ -17,7 +17,7 @@ function TeacherItem() {
       </header>
 
       <p>
-          Apaixonada em ensinar seus alunos a expandir seus horizontes ensinado a eles o idioma mais falado no mundo.
+          Apaixonada em ensinar seus alunos a expandir seus horizontes ensinando a eles o idioma mais falado no mundo.
           <br/><br/>
           Graduada em letras pela escola de magia de Hogwarts, localizada na Inglaterra e doutora em desencanto de quem acha que não consegue falar em inglês, pelo Instituto Durmstrang, localizado no extremo norte da Europa.
       </p>
