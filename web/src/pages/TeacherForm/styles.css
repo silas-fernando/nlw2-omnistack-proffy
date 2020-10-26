@@ -51,10 +51,9 @@
   color: var(--color-primary-dark);
 }
 
-
 #page-teacher-form main fieldset .input-block + .textarea-block,
 #page-teacher-form main fieldset .select-block + .input-block {
-   margin-top: 2.4rem;
+  margin-top: 2.4rem;
 }
 
 #page-teacher-form main label {
@@ -125,9 +124,8 @@
     margin-top: 0 !important;
   }
 
-
   #page-teacher-form main footer {
-    padding: 4.0rem 6.4rem;
+    padding: 4rem 6.4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;

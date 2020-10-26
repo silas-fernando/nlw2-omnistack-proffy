@@ -1,0 +1,58 @@
+.side {
+  width: 100%;
+  max-width: 78rem;
+
+  height: 40%;
+
+  padding: 4.5%;
+  background: var(--color-primary);
+}
+
+.side-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../../assets/images/login-background.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.side-logo {
+  width: 18rem;
+  text-align: left;
+}
+
+.side-logo img {
+  width: 100%;
+  /*height: 100%;*/
+  max-width: 33.417rem;
+  max-height: 9.764rem;
+}
+
+.side-logo h3 {
+  font: 400 1.5rem Poppins;
+  line-height: 1.8rem;
+
+  margin-top: 0;
+  color: var(--color-text-in-primary);
+}
+
+@media (min-width: 800px) {
+  .side {
+    height: 100%;
+  }
+
+  .side-logo {
+    width: 33.417rem;
+  }
+
+  .side-logo h3 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}

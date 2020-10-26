@@ -15,6 +15,7 @@
   height: 5.6rem;
   margin-top: 0.8rem;
   border-radius: 0.8rem;
+
   background: var(--color-input-background);
   border: 1px solid var(--color-line-in-white);
   outline: 0;
@@ -25,10 +26,58 @@
 .input-block:focus-within::after {
   width: calc(100% - 3.2rem);
   height: 2px;
-  content: '';
+  content: "";
   background: var(--color-primary-light);
   position: absolute;
   left: 1.6rem;
   right: 1.6rem;
   bottom: 0;
 }
+
+.input-block input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-text-complement);
+  opacity: 1; /* Firefox */
+}
+
+.input-block input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--color-text-complement);
+}
+
+.input-block input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--color-text-complement);
+}
+
+/*Se tiver input type password*/
+.input-block span.eye {
+  display: block;
+  position: absolute;
+
+  width: 2.4rem;
+  height: 2.4rem;
+
+  right: 2.5rem;
+  bottom: 1.6rem;
+
+  /*background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;*/
+  /*background-image: url("../../assets/images/icons/open-eye.svg");*/
+  background: no-repeat center/contain
+    url("../../assets/images/icons/open-eye.svg");
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*
+.input-block span.eye:active {
+  background: url("../../assets/images/icons/open-eye.svg");
+}
+*/
+/*Se tiver input type password*/
