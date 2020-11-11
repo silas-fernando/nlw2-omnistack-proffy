@@ -1,0 +1,203 @@
+#page-register-form {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#page-register-form main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: none;
+
+  width: 100%;
+  height: 65%;
+
+  border-radius: 0.8rem;
+  overflow: scroll;
+}
+
+#page-register-form main > a {
+  position: absolute;
+  width: 35.2rem;
+  top: 0.5rem;
+}
+
+#page-register-form main form {
+  width: 35.2rem;
+}
+
+#page-register-form main fieldset {
+  /*margin: 1.5rem 0;*/
+  padding: 0;
+  border: 0;
+}
+
+#page-register-form main fieldset legend {
+  font: 600 2rem Poppins;
+  color: var(--color-text-title);
+  margin-bottom: 0.5rem;
+  width: 100%;
+  /*width: 35.2rem;*/
+  /*padding-bottom: 1.8rem;*/
+}
+
+#page-register-form main fieldset p {
+  font: normal 1.2rem Poppins;
+  margin-bottom: 1rem;
+  color: var(--color-text-base);
+}
+
+#page-register-form main fieldset .input-block + .input-block {
+  margin-top: 0;
+}
+
+#page-register-form main fieldset .input-block input {
+  width: 100%;
+  height: 5.5rem;
+  margin-top: 0;
+  border-radius: 0;
+  padding: 0 1.8rem;
+  font: 1.4rem Poppins;
+}
+
+#page-register-form main fieldset .input-block input[id='name'] {
+  border-radius: 8px 8px 0px 0px;
+}
+
+#page-register-form main fieldset .input-block input[id='password'] {
+  border-top: none;
+  border-radius: 0px 0px 8px 8px;
+}
+
+#page-register-form main fieldset .input-block:focus-within::after {
+  width: 1px;
+  height: calc(100% - 1.8rem);
+  border-radius: 8px;
+  margin-left: -1.6rem;
+  bottom: 1rem;
+}
+
+#page-register-form main footer {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#page-register-form main footer button {
+  width: 100%;
+  height: 4.6rem;
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 600 1.4rem Archivo;
+  text-decoration: none;
+}
+
+#page-register-form main footer span.errors {
+  display: block;
+  text-align: justify;
+  font: normal 1.6rem Archivo;
+  line-height: 2rem;
+  color: #ff6d53;
+  margin: 1.5rem 0;
+}
+
+#page-register-form main footer button:enabled {
+  background: var(--color-secondary);
+  color: var(--color-button-text);
+}
+
+#page-register-form main footer button:disabled {
+  background: var(--color-button-disable);
+  color: var(--color-text-complement);
+}
+
+@media (max-width: 320px) {
+  #page-register-form main > a {
+    width: 28rem;
+  }
+
+  #page-register-form main form {
+    width: 28rem;
+  }
+
+  #page-register-form main fieldset legend {
+    margin-bottom: 0.5rem;
+  }
+
+  #page-register-form main footer span.errors {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  #page-register-form main fieldset .input-block input {
+    height: 4.5rem;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  #page-register-form main fieldset .input-block .eye {
+    height: 2rem;
+    width: 2rem;
+    right: 2rem;
+    bottom: 1.2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  #page-register-form {
+    max-width: 100vw;
+    max-height: 100vh;
+    flex-direction: row;
+  }
+
+  #page-register-form main {
+    margin: 0;
+    height: 100%;
+    /*justify-content: flex-start;*/
+  }
+
+  #page-register-form main fieldset {
+    /*margin-bottom: 2rem;*/
+    width: 100%;
+  }
+
+  #page-register-form main fieldset legend {
+    margin-bottom: 1.5rem;
+    font-size: 3.6rem;
+  }
+
+  #page-register-form main fieldset p {
+    font-size: 1.6rem;
+    margin-bottom: 3.5rem;
+  }
+
+  #page-register-form main fieldset .input-block input {
+    height: 7.2rem;
+    font-size: 1.6rem;
+  }
+
+  #page-register-form main fieldset .input-block .eye {
+    bottom: 2.5rem;
+  }
+
+  #page-register-form main footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  #page-register-form main footer button {
+    height: 5.6rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  #page-register-form main footer span.errors {
+    height: auto;
+    /*background-color: yellowgreen;*/
+    margin: 4rem 0;
+  }
+}
